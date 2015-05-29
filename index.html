@@ -8,20 +8,13 @@
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="author" content="test">
+    <meta name="author" content="宋大明明">
+    <meta name="keywords" content="operation, python">
     <meta name="description" content="test">
-    <meta name="description" content="test">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="异类深呼吸">
-    <meta property="og:url" content="http://yoursite.com/index.html">
-    <meta property="og:site_name" content="Hexo">
-    <meta property="og:description" content="test">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hexo | test">
-    <meta name="twitter:description" content="test">
 
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="css/uno.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css" type="text/css">
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
@@ -49,15 +42,31 @@
                             <li class="navigation__item"><a href="/link" title="" class="">友链</a></li>
                             <li class="navigation__item"><a href="/about" title="" class="">关于我</a></li>
                         </ul>
-                    </nav>
+                    </nav><br>
 
                     <nav class="cover-navigation navigation--social">
                         <ul class="navigation">
                             <!-- Github -->
                             <li class="navigation__item">
-                                <a href="https://github.com/mingmings" title="Huno on GitHub">
-                                    <i class='icon icon-social-github'></i>
+                                <a href="https://github.com/mingmings">
+                                    <i class='fa fa-github fa-2x'></i>
                                     <span class="label">GitHub</span>
+                                </a>
+                            </li>
+
+                            <!-- 微博 -->
+                            <li class="navigation__item">
+                                <a href="http://weibo.com/u/2469594384">
+                                    <i class='fa fa-weibo fa-2x'></i>
+                                    <span class="label">微博</span>
+                                </a>
+                            </li>
+
+                            <!-- Email -->
+                            <li class="navigation__item">
+                                <a href="mailto:369413651@qq.com">
+                                    <i class='fa fa-envelope-o fa-2x'></i>
+                                    <span class="label">邮箱</span>
                                 </a>
                             </li>
                         </ul>
@@ -68,12 +77,6 @@
         <div class="panel-cover--overlay"></div>
     </div>
 </header>
-        <!--<footer class="footer">-->
-            <!--<span class="footer__copyright">&copy; 2014. All rights reserved.</span>-->
-            <!--<span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a> | Redesign by <a href="http://letiantian.me" title="">樂天</a></span>-->
-        <!--</footer>-->
-    <!--</div>-->
-<!--</div>-->
 
 <!-- The main JavaScript file for Casper -->
 <script src="js/main.js"></script>
@@ -82,54 +85,21 @@
 <script src="js/gallery.js"></script>
 <script src="js/jquery.githubRepoWidget.min.js"></script>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]}
-    });
-    </script>
 
 <!--kill ie6 -->
 <!--[if IE 6]>
 <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
 <![endif]-->
 
-<!--  google analytics -->
-<script>
-    // add your google analytics code here
-</script>
-
 <!-- totop -->
 <div id="totop" style="position:fixed;bottom:50px;right:30px;cursor: pointer;">
     <a title="back to top"><img style="width:30px;height:30px;" src="images/totop.png"/></a>
 </div>
-<script>
-    (function($) {
-        var upperLimit = 100;
-        var scrollElem = $('#totop');
-        var scrollSpeed = 500;
-        scrollElem.hide();
-        $(window).scroll(function () {
-            var scrollTop = $(document).scrollTop();
-            if ( scrollTop > upperLimit ) {
-                $(scrollElem).stop().fadeTo(300, 1); // fade back in
-            }else{
-                $(scrollElem).stop().fadeTo(300, 0); // fade out
-            }
-        });
-        $(scrollElem).click(function(){
-            $('html, body').animate({scrollTop:0}, scrollSpeed); return false;
-        });
-    })(jQuery);
-</script>
+<script src="js/scroll.js"></script>
 
 <!-- fancybox -->
-
 <link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-    (function($){
-        $('.fancybox').fancybox();
-    })(jQuery);
-</script>
+<script type="text/javascript" src="js/fancybox.js"></script>
 </body>
 </html>

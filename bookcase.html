@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>
+        Hexo | test
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="test">
+    <meta name="description" content="test">
+    <meta name="description" content="test">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hexo | test">
+    <meta property="og:url" content="http://yoursite.com/index.html">
+    <meta property="og:site_name" content="Hexo">
+    <meta property="og:description" content="test">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hexo | test">
+    <meta name="twitter:description" content="test">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="css/uno.css" type="text/css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<span class="mobile btn-mobile-menu">
+    <i class="icon icon-list btn-mobile-menu__icon"></i>
+    <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover">
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content">
+
+                <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Hexo</a></h1>
+
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">
+                    test
+                </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="/#blog" title="" class="blog-button">Blog</a></li>
+                            <li class="navigation__item"><a href="/about" title="" class="">About</a></li>
+                            <li class="navigation__item"><a href="/blogroll" title="" class="">Blogroll</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="cover-navigation navigation--social">
+                        <ul class="navigation">
+                            <!-- Github -->
+                            <li class="navigation__item">
+                                <a href="https://github.com/someus/huno" title="Huno on GitHub">
+                                    <i class='icon icon-social-github'></i>
+                                    <span class="label">GitHub</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+
+<div class="content-wrapper">
+    <div class="content-wrapper__inner entry">
+        <!-- do nothing -->
+<div id="container">
+   <div id="wrap">
+
+    <div class="outer">
+    <!-- 加载提示 -->
+    <i class="fa fa-spinner fa-spin" style="
+    font-size: 50px;
+    margin: 20px auto;
+    position: relative;
+    left: 50%;
+    color: #979797;
+    "></i>
+
+     <span id="close" class="back">←</span>
+     <ul id="tp-grid" class="tp-grid">
+      <!-- 自动生成 -->
+     </ul>
+    </div>
+
+   </div>
+
+   <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+   <script type="text/javascript" src="/js/script.js"></script>
+   <!-- 书栏目插件区域 -->
+   <style>
+        #tp-grid {
+            margin: 20px 0;
+        }
+
+        .tp-grid li img {
+            width: 120px;
+        }
+
+        .tp-title span:nth-child(2) {
+            display: none!important;
+        }
+
+        .back {
+            border-radius: 50%;
+            text-align: center;
+            color: #999;
+            background: #ddd;
+            padding: 7px;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            display: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .back:hover {
+            background: #fff;
+            background: rgba(255,255,255,0.9);
+        }
+    </style>
+   <link rel="stylesheet" type="text/css" href="css/stapel.css">
+   <script src="js/modernizr.custom.63321.js"></script>
+   <script type="text/javascript" src="js/jquery.stapel.js"></script>
+   <script type="text/javascript" src="books.js"></script>
+   <script type="text/javascript">
+        $(function() {
+            var bookcase = {
+                html: function (category, name, url) {
+                    var html = '<li title="'+ name +'" data-pile="'+ category +'">' +
+                            '<a href="###">' +
+                            '<span class="tp-info">' +
+                            '<span>'+ name +'</span>' +
+                            '</span>' +
+                            '<img src="'+ url +'?imageView2/2/w/120/interlace/1" />' +
+                            '</a>' +
+                            '</li>';
+                    return html;
+                },
+
+                add: function (category, book) {
+                    var _this = this;
+                    var html = _this.html(category, book.name, book.url);
+                    $('#tp-grid').append(html);
+                },
+
+                init: function (books) {
+                    var _this = this;
+                    // 生成列表
+                    $.each(books, function (k ,v) {
+                        // 正在看 和 准备看
+                        switch (v.reading) {
+                            case 1:
+                                _this.add('正在看', v);
+                                break;
+
+                            case 2:
+                                _this.add('准备看', v);
+                                break;
+                            default :
+                            //
+                        }
+
+                        // 分类
+                        switch (v.type) {
+                            case '前端':
+                                _this.add('前端', v);
+                                break;
+
+                            case '后端':
+                                _this.add('后端', v);
+                                break;
+
+                            case '体验':
+                                _this.add('体验', v);
+                                break;
+
+                            case '其他':
+                                _this.add('其他', v);
+                                break;
+                            default :
+                            //
+                        }
+                    });
+
+                    // 排序
+                    $('[data-pile="正在看"]').appendTo('#tp-grid');
+                    $('[data-pile="准备看"]').appendTo('#tp-grid');
+                    $('[data-pile="前端"]').appendTo('#tp-grid');
+                    $('[data-pile="后端"]').appendTo('#tp-grid');
+                    $('[data-pile="体验"]').appendTo('#tp-grid');
+                    $('[data-pile="其他"]').appendTo('#tp-grid');
+                    $('[data-pile="体验"]:last').after($('[title="在你身边 为你设计"]'));
+                }
+            }
+
+            bookcase.init(window.books);
+            var $grid = $('#tp-grid'),
+                    $name = $('#name'),
+                    $close = $('#close');
+
+            var stapel = $grid.stapel({
+                delay: 10,
+                onLoad: function () {
+                  $('.fa-spinner').fadeOut();
+                },
+                onBeforeOpen: function (pileName) {
+                    $name.html(pileName);
+                },
+                onAfterOpen: function () {
+                    $close.fadeIn();
+                }
+            });
+
+            $close.on('click', function () {
+                $close.hide();
+                $name.empty();
+                stapel.closePile();
+            });
+
+        } );
+    </script>
+  </div>
+
+    </div>
+</div>
+
+<!-- The main JavaScript file for Casper -->
+<script src="js/main.js"></script>
+<script src="js/scale.fix.js"></script>
+<script src="js/jquery.imagesloaded.min.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/jquery.githubRepoWidget.min.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ 
+        tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+    }); 
+    </script>
+
+<!--kill ie6 -->
+<!--[if IE 6]>
+<script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+<!--  google analytics -->
+<script>
+    // add your google analytics code here
+</script>
+
+<!-- totop -->
+<div id="totop" style="position:fixed;bottom:50px;right:30px;cursor: pointer;">
+    <a title="back to top"><img style="width:30px;height:30px;" src="/images/totop.png"/></a>
+</div>
+<script>
+    (function($) {
+        var upperLimit = 100;
+        var scrollElem = $('#totop');
+        var scrollSpeed = 500;
+        scrollElem.hide();
+        $(window).scroll(function () {
+            var scrollTop = $(document).scrollTop();
+            if ( scrollTop > upperLimit ) {
+                $(scrollElem).stop().fadeTo(300, 1); // fade back in
+            }else{
+                $(scrollElem).stop().fadeTo(300, 0); // fade out
+            }
+        });
+        $(scrollElem).click(function(){
+            $('html, body').animate({scrollTop:0}, scrollSpeed); return false;
+        });
+    })(jQuery);
+</script>
+
+<!-- fancybox -->
+
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+    (function($){
+        $('.fancybox').fancybox();
+    })(jQuery);
+</script>
+
+
+</body>
+</html>

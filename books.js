@@ -13,7 +13,7 @@ var books = [
     { name: 'Head First Python',
         url: imgUrl + 'head first python.jpg', type: '后端', reading: 3 },
     { name: '向前一步',
-        url: imgUrl + 'lean in.jpg', type: '人物传记', reading: 3 },
+        url: imgUrl + '向前一步.jpg', type: '人物传记', reading: 3 },
     { name: '史蒂夫·乔布斯传',
         url: imgUrl + '斯蒂文乔布斯传.jpg', type: '人物传记', reading: 3 },
     { name: '看见',

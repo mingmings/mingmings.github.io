@@ -186,8 +186,12 @@
                                 _this.add('后端', v);
                                 break;
 
-                            case '体验':
-                                _this.add('体验', v);
+                            case '数据库':
+                                _this.add('数据库'. v);
+                                break
+
+                            case '人物传记':
+                                _this.add('人物传记', v);
                                 break;
 
                             case '其他':
@@ -201,11 +205,12 @@
                     // 排序
                     $('[data-pile="正在看"]').appendTo('#tp-grid');
                     $('[data-pile="准备看"]').appendTo('#tp-grid');
-                    $('[data-pile="前端"]').appendTo('#tp-grid');
                     $('[data-pile="后端"]').appendTo('#tp-grid');
-                    $('[data-pile="体验"]').appendTo('#tp-grid');
+                    $('[data-pile="数据库"]').appendTo('#tp-grid');
+                    $('[data-pile="前端"]').appendTo('#tp-grid');
+                    $('[data-pile="人物传记"]').appendTo('#tp-grid');
                     $('[data-pile="其他"]').appendTo('#tp-grid');
-                    $('[data-pile="体验"]:last').after($('[title="在你身边 为你设计"]'));
+//                    $('[data-pile="体验"]:last').after($('[title="在你身边 为你设计"]'));
                 }
             }
 

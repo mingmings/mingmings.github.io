@@ -6,12 +6,12 @@ var books = [
         url: imgUrl + 'redis 设计与实现.jpg', type: '后端', reading: 1 },
 
 
-    { name: 'Head First Python',
-        url: imgUrl + 'head first python.jpg', type: '后端', reading: 2 },
+    { name: '高性能MySQL',
+        url: imgUrl + '高性能MySQL.jpg', type: '后端', reading: 2 },
 
 
-    { name: 'Head First Python',
-        url: imgUrl + 'head first python.jpg', type: '后端', reading: 3 },
+    { name: 'Redis 入门指南',
+        url: imgUrl + 'redis 入门指南.jpg', type: '后端', reading: 3 },
     { name: '向前一步',
         url: imgUrl + '向前一步.jpg', type: '人物传记', reading: 3 },
     { name: '史蒂夫·乔布斯传',

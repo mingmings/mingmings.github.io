@@ -3,7 +3,7 @@ var imgUrl = 'http://mingmings.qiniudn.com/book/';
 
 var books = [
     { name: 'Redis 设计与实现',
-        url: imgUrl + 'redis she ji yu shi xian.jpg', type: '后端', reading: 1 },
+        url: imgUrl + 'redis 设计与实现.jpg', type: '后端', reading: 1 },
 
 
     { name: 'Head First Python',

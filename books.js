@@ -10,7 +10,8 @@ var books = [
 
     { name: 'Head First Python',
         url: imgUrl + 'head first python.jpg', type: '后端', reading: 3 },
-
     { name: '向前一步',
-        url: imgUrl + 'lean in.jpg', type: '人物传记', reading: 3 }
+        url: imgUrl + 'lean in.jpg', type: '人物传记', reading: 3 },
+    { name: '罗织经',
+        url: imgUrl + '罗织经.jpg', type: '其他', reading: 3 }
 ];

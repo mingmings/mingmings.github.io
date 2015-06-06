@@ -29,6 +29,7 @@ var books = [
     { name: '清教徒的礼物',
         url: imgUrl + '清教徒的礼物.jpg', reading: 2 },
 
+
     { name: 'Redis 入门指南',
         url: imgUrl + 'redis 入门指南.jpg', type: '数据库', reading: 3 },
 
@@ -38,7 +39,7 @@ var books = [
 
 
     { name: '不在沉默的猪',
-        url: imgUrl + '不在沉默的猪.jpg', reading: 2 },
+        url: imgUrl + '不在沉默的猪.jpg', type: '人物传记', reading: 3 },
     { name: '向前一步',
         url: imgUrl + '向前一步.jpg', type: '人物传记', reading: 3 },
     { name: '史蒂夫·乔布斯传',

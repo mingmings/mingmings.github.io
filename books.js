@@ -4,11 +4,17 @@ var imgUrl = 'http://mingmings.qiniudn.com/book/';
 var books = [
     { name: 'Redis 设计与实现',
         url: imgUrl + 'redis 设计与实现.jpg', type: '后端', reading: 1 },
-
+    { name: 'Redis cookbook',
+        url: imgUrl + 'redis cookbook.jpg', type: '后端', reading: 1 },
 
     { name: '高性能MySQL',
         url: imgUrl + '高性能MySQL.jpg', type: '后端', reading: 2 },
-
+    { name: 'Redis in Action',
+        url: imgUrl + 'redis in action.jpg', type: '后端', reading: 2 },
+    { name: 'Mongodb in Action',
+        url: imgUrl + 'mongodb实战.jpg', type: '后端', reading: 2 },
+    { name: 'Mongodb 权威指南',
+        url: imgUrl + 'mongodb权威指南.jpg', type: '后端', reading: 2 },
 
     { name: 'Redis 入门指南',
         url: imgUrl + 'redis 入门指南.jpg', type: '后端', reading: 3 },

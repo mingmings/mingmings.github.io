@@ -44,6 +44,7 @@ var books = [
     { name: 'AWS云端企业实战圣经',
         url: imgUrl + 'AWS云端企业实战圣经.jpg', type: '后端', reading: 3 },
 
+
     { name: '不在沉默的猪',
         url: imgUrl + '不在沉默的猪.jpg', type: '人物传记', reading: 3 },
     { name: '向前一步',

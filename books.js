@@ -36,7 +36,8 @@ var books = [
 
     { name: '实战 linux shell 编程与服务器管理',
         url: imgUrl + '实战 linux shell 编程与服务器管理.jpg', type: '后端', reading: 3 },
-
+    { name: '鸟哥的linux私房菜',
+        url: imgUrl + '鸟哥的linux私房菜.jpg', type: '后端', reading: 3 },
 
     { name: '不在沉默的猪',
         url: imgUrl + '不在沉默的猪.jpg', type: '人物传记', reading: 3 },

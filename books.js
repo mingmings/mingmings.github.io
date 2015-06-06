@@ -2,10 +2,15 @@ var imgUrl = 'http://mingmings.qiniudn.com/book/';
 /* 1：在看 2：待看 3 归档 */
 
 var books = [
+    //{ name: '',
+    //    url: imgUrl + '', reading: 2 },
     { name: 'Redis 设计与实现',
         url: imgUrl + 'redis 设计与实现.jpg', type: '后端', reading: 1 },
     { name: 'Redis cookbook',
         url: imgUrl + 'redis cookbook.jpg', type: '后端', reading: 1 },
+    { name: '深入云计算 Mongodb 管理与开发实战详解',
+        url: imgUrl + '深入云计算 mongodb 管理与开发实战详解.jpg', type: '后端', reading: 1 },
+
 
     { name: '高性能MySQL',
         url: imgUrl + '高性能MySQL.jpg', reading: 2 },
@@ -15,8 +20,19 @@ var books = [
         url: imgUrl + 'mongodb实战.jpg', reading: 2 },
     { name: 'Mongodb 权威指南',
         url: imgUrl + 'mongodb权威指南.jpg', reading: 2 },
+    { name: '挪威的森林',
+        url: imgUrl + '挪威的森林.jpg', reading: 2 },
+    { name: '世界尽头与冷酷仙境',
+        url: imgUrl + '世界尽头与冷酷仙境.jpg', reading: 2 },
+    { name: '性史1926',
+        url: imgUrl + '性史1926.jpg', reading: 2 },
+    { name: '清教徒的礼物',
+        url: imgUrl + '清教徒的礼物.jpg', reading: 2 },
+
+
     { name: 'Redis 入门指南',
-        url: imgUrl + 'redis 入门指南.jpg', reading: 3 },
+        url: imgUrl + 'redis 入门指南.jpg', type: '后端', reading: 3 },
+
 
     { name: '向前一步',
         url: imgUrl + '向前一步.jpg', type: '人物传记', reading: 3 },
@@ -24,6 +40,9 @@ var books = [
         url: imgUrl + '斯蒂文乔布斯传.jpg', type: '人物传记', reading: 3 },
     { name: '看见',
         url: imgUrl + '看见.jpg', type: '人物传记', reading: 3 },
+    { name: '我不要你死于一事无成',
+        url: imgUrl + '我不要你死于一事无成.jpg', type: '人物传记', reading: 3 },
+
 
     { name: '不能承受的生命之轻',
         url: imgUrl + '不能承受的生命之轻.jpg', type: '小说', reading: 3 },
@@ -32,11 +51,23 @@ var books = [
     { name: '疯狂的程序员',
         url: imgUrl + '疯狂的程序员.jpg', type: '小说', reading: 3 },
 
+
     { name: '轻风茗月品女人',
         url: imgUrl + '轻风茗月品女人.jpg', type: '散文', reading: 3 },
 
+
     { name: '波利泰里尼网球手册',
         url: imgUrl + '波利泰里尼网球手册.jpg', type: '运动健身', reading: 3 },
+    { name: '健美肌肉功能图解',
+        url: imgUrl + '健美肌肉功能图解.jpg', type: '运动健身', reading: 3 },
+    { name: '力量与搏击训练',
+        url: imgUrl + '力量与搏击训练.jpg', type: '运动健身', reading: 3 },
+    { name: '家庭健美训练图解',
+        url: imgUrl + '家庭健美训练图解.jpg', type: '运动健身', reading: 3 },
+    { name: '手臂肌肉训练',
+        url: imgUrl + '手臂肌肉训练.jpg', type: '运动健身', reading: 3 },
+    { name: '腹部肌肉训练',
+        url: imgUrl + '腹部肌肉训练.jpg', type: '运动健身', reading: 3 },
     { name: '肌肉健美图解',
         url: imgUrl + '肌肉健美图解.jpg', type: '运动健身', reading: 3 },
 

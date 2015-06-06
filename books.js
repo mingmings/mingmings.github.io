@@ -5,11 +5,11 @@ var books = [
     //{ name: '',
     //    url: imgUrl + '', reading: 2 },
     { name: 'Redis 设计与实现',
-        url: imgUrl + 'redis 设计与实现.jpg', type: '后端', reading: 1 },
+        url: imgUrl + 'redis 设计与实现.jpg', type: '数据库', reading: 1 },
     { name: 'Redis cookbook',
-        url: imgUrl + 'redis cookbook.jpg', type: '后端', reading: 1 },
+        url: imgUrl + 'redis cookbook.jpg', type: '数据库', reading: 1 },
     { name: '深入云计算 Mongodb 管理与开发实战详解',
-        url: imgUrl + '深入云计算 mongodb 管理与开发实战详解.jpg', type: '后端', reading: 1 },
+        url: imgUrl + '深入云计算 mongodb 管理与开发实战详解.jpg', type: '数据库', reading: 1 },
 
 
     { name: '高性能MySQL',
@@ -29,11 +29,16 @@ var books = [
     { name: '清教徒的礼物',
         url: imgUrl + '清教徒的礼物.jpg', reading: 2 },
 
-
     { name: 'Redis 入门指南',
-        url: imgUrl + 'redis 入门指南.jpg', type: '后端', reading: 3 },
+        url: imgUrl + 'redis 入门指南.jpg', type: '数据库', reading: 3 },
 
 
+    { name: '实战 linux shell 编程与服务器管理',
+        url: imgUrl + '实战 linux shell 编程与服务器管理.jpg', type: '后端', reading: 3 },
+
+
+    { name: '不在沉默的猪',
+        url: imgUrl + '不在沉默的猪.jpg', reading: 2 },
     { name: '向前一步',
         url: imgUrl + '向前一步.jpg', type: '人物传记', reading: 3 },
     { name: '史蒂夫·乔布斯传',
@@ -76,5 +81,9 @@ var books = [
     { name: '没有任何借口',
         url: imgUrl + '没有任何借口.jpg', type: '其他', reading: 3 },
     { name: '高效能人士的七个习惯',
-        url: imgUrl + '高效能人士的七个习惯.jpg', type: '其他', reading: 3 }
+        url: imgUrl + '高效能人士的七个习惯.jpg', type: '其他', reading: 3 },
+    { name: '这样读书就够了',
+        url: imgUrl + '这样读书就够了.jpg', type: '其他', reading: 3 },
+    { name: '如何阅读一本书',
+        url: imgUrl + '如何阅读一本书.jpg', type: '其他', reading: 3 }
 ];

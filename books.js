@@ -94,5 +94,6 @@ var books = [
         url: imgUrl + '这样读书就够了.jpg', type: '其他', reading: 3 },
     { name: '如何阅读一本书',
         url: imgUrl + '如何阅读一本书.jpg', type: '其他', reading: 3 }
-
+    { name: '时间管理',
+        url: imgUrl + '时间管理.jpg', type: '其他', reading: 3 }
 ];

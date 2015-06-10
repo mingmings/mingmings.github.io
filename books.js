@@ -10,6 +10,8 @@ var books = [
         url: imgUrl + 'redis cookbook.jpg', type: '数据库', reading: 1 },
     { name: '深入云计算 Mongodb 管理与开发实战详解',
         url: imgUrl + '深入云计算 mongodb 管理与开发实战详解.jpg', type: '数据库', reading: 1 },
+    { name: 'head first html 与 css（第二版）',
+        url: imgUrl + 'head first html 与 css（第二版）.jpg', type: '前端', reading: 1 },
 
 
     { name: '高性能MySQL',
@@ -93,7 +95,7 @@ var books = [
     { name: '这样读书就够了',
         url: imgUrl + '这样读书就够了.jpg', type: '其他', reading: 3 },
     { name: '如何阅读一本书',
-        url: imgUrl + '如何阅读一本书.jpg', type: '其他', reading: 3 }
+        url: imgUrl + '如何阅读一本书.jpg', type: '其他', reading: 3 },
     { name: '时间管理',
         url: imgUrl + '时间管理.jpg', type: '其他', reading: 3 }
 ];

@@ -10,8 +10,8 @@ var books = [
         url: imgUrl + 'redis cookbook.jpg', type: '数据库', reading: 1 },
     { name: '深入云计算 Mongodb 管理与开发实战详解',
         url: imgUrl + '深入云计算 mongodb 管理与开发实战详解.jpg', type: '数据库', reading: 1 },
-    { name: 'head first html 与 css（第二版）',
-        url: imgUrl + 'head first html 与 css（第二版）.jpg', type: '前端', reading: 1 },
+    { name: 'HTML与CSS入门经典（第8版）',
+        url: imgUrl + 'HTML与CSS入门经典（第8版）.jpg', type: '前端', reading: 1 },
 
 
     { name: '高性能MySQL',
@@ -45,6 +45,10 @@ var books = [
         url: imgUrl + '鸟哥的linux私房菜.jpg', type: '后端', reading: 3 },
     { name: 'AWS云端企业实战圣经',
         url: imgUrl + 'AWS云端企业实战圣经.jpg', type: '后端', reading: 3 },
+
+
+    { name: 'head first html 与 css（第二版）',
+        url: imgUrl + 'head first html 与 css（第二版）.jpg', type: '前端', reading: 3 },
 
 
     { name: '不在沉默的猪',

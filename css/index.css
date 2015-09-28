@@ -10,6 +10,13 @@ body {
   overflow: hidden;
 }
 
+.mingming {
+  /*text-align: center;*/
+  margin: 120px auto auto auto;
+  max-width: 500px;
+  padding: 0 20px;
+}
+
 .willerce {
   text-align: center;
   margin: 120px auto auto auto;
@@ -21,16 +28,25 @@ body {
   color: #535353;
   text-decoration: underline;
 }
+
 .willerce a:link,
 .willerce a:visited {
   color: #535353;
   text-decoration: underline;
 }
+
 h1 {
   font-size: 26px;
   color: #424242;
   margin-bottom: 20px;
 }
+
+h2 {
+  font-size: 20px;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
 .avatar {
   margin-bottom: 35px;
   border-radius: 64px;
